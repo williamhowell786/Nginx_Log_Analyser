@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 echo "TOP 5 IP ADDRESSES WITH THE MOST REQUESTS:"
 awk '{print $1}' $1 | sort | uniq -ci | sort -nr | head -n 5
 echo "TOP 5 MOST REQUESTED PATHS:"
